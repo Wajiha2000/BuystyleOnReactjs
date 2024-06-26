@@ -1,0 +1,229 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: small;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(61, 6, 6);
+  opacity: 0.5;
+}
+
+.navbar-li {
+  float: left;
+  height: 46px;
+  color: white;
+}
+
+.navbar-li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 17px 16px;
+  text-decoration: none;
+}
+
+ul a:hover:not(.active) {
+  background-color: rgb(136, 56, 3);
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+.login {
+  float:right;
+}
+
+/* Home Section */
+.home {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* padding: 3px 200px; */
+  align-items: center;
+  justify-content: center;
+  height: 578px;
+}
+.home::before {
+  content: "";
+  position: absolute;
+  background: url(bg.jpg) no-repeat center center/cover;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+.home h1 {
+  color: black;
+  text-align: center;
+  font-family: "Bree Serif", serif;
+}
+
+.home p {
+  color: black;
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: "Bree Serif", serif;
+}
+.h-welcome {
+  text-align: center;
+  font-size: 50px;
+}
+.h-para {
+  width: 60%;
+  height: auto;
+  padding-top: 30px;
+  font-size: 2.5rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+.h-btn {
+  border: 2px solid black;
+  background-color: burlywood;
+  color: black;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  width: 15%;
+  height: 60px;
+  padding: 0 20px 0 20px;
+  margin: 50px 0 0px 0;
+}
+.h-btn:hover{
+  background-color: rgb(240, 176, 39);
+}
+.main-container {
+  width: 90%;
+  /* background-color: #04AA6D; */
+  height: 500px;
+  display: inline;
+}
+/********* Content page************ */
+.content-h1{
+  text-align: center;
+  font-size: 50px;
+  color: navy;
+}
+.container-a{
+  width: 20%;
+  /* background-color: #642a2a; */
+  display: inline-block;
+  padding: 20px 20px 20px 20px;
+  margin: 5px;
+  /* align-items: center; */
+  transition: transform .2s;
+}
+.container-b{
+  width: 20%;
+  /* background-color: #2a642a; */
+  display: inline-block;
+  padding: 20px;
+  margin: 10px;
+  transition: transform .2s;
+}
+.container-c{
+  width: 20%;
+  /* background-color: #290000; */
+  display: inline-block;
+  padding: 20px;
+  margin: 10px;
+  transition: transform .2s;
+}
+.container-d{
+  width: 20%;
+  display: inline-block;
+  padding: 20px;
+  margin: 10px;
+  transition: transform .2s;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.container-a:hover{
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); 
+  box-shadow: 5px 5px 8px rgb(199, 81, 2), 10px 10px 8px rgb(90, 4, 4), 15px 15px 8px rgb(158, 103, 2);
+}
+.container-b:hover{
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); 
+  box-shadow: 5px 5px 8px rgb(199, 81, 2), 10px 10px 8px rgb(90, 4, 4), 15px 15px 8px rgb(158, 103, 2);
+}
+.container-c:hover{
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); 
+  box-shadow: 5px 5px 8px rgb(199, 81, 2), 10px 10px 8px rgb(90, 4, 4), 15px 15px 8px rgb(158, 103, 2);
+}
+.container-d:hover{
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); 
+  box-shadow: 5px 5px 8px rgb(199, 81, 2), 10px 10px 8px rgb(90, 4, 4), 15px 15px 8px rgb(158, 103, 2);
+}
+/* *******Events******** */
+.events {
+  text-align: center;
+  padding: 50px;
+}
+.events-h1{
+  color: rgb(122, 9, 47);
+}
+.events-btn {
+  width: 200px;
+  padding: 20px;
+  background-color: rgb(122, 9, 47);
+  color: rgb(218, 135, 174);
+  border-radius: 40px;
+}
+.events-btn:hover {
+  color: rgb(122, 9, 47);
+  background-color: rgb(218, 135, 174);
+  border: none;
+  width: 190px;
+}
+/* *******PrposChild Component******** */
+.props-h1{
+  text-align: center;
+  color: rgb(122, 9, 47);
+}
+.props-voices{
+  text-align: center;
+  color: hotpink;
+}
+/* *******Lists Component******** */
+.lists-li{
+  background-color: white;
+  color: red;
+  text-align: center;
+  text-decoration: square;
+  font-size: 20px;
+}
+.list-h1{
+  text-align: center;
+  color: rgb(122, 9, 47);
+}
+/* *******Footer******** */
+.footer {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(170, 130, 130);
+}
+.footer-copyright{
+  margin: 50px;
+  text-align: center;
+  padding-top: 15px;
+}
